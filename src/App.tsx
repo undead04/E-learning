@@ -13,7 +13,7 @@ function App() {
    <>
     <Header/>
     {/*Còn đang cải thiện*/}
-    {/*<ChatBot/>*/}
+    <ChatBot/>
     <Routes>
       <Route path='' element={<HomePage/>}/>
       <Route path='/product'element={<ProductPage/>}/>

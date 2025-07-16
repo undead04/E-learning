@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+# E-Learning Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Nền tảng học trực tuyến hiện đại, giao diện đẹp, trải nghiệm mượt mà, tích hợp AI gợi ý khoá học phù hợp cho từng người dùng.
 
-## Available Scripts
+## 🚀 Tính năng nổi bật
 
-In the project directory, you can run:
+- **Trang chủ hiện đại**: Hero section, giới thiệu, carousel khoá học nổi bật, đánh giá học viên.
+- **Tìm kiếm & lọc sản phẩm**: Tìm kiếm theo tên, lọc theo giá, hiển thị sản phẩm dạng thẻ đẹp mắt.
+- **Gợi ý AI thông minh**:
+  - Chatbot AI tư vấn sản phẩm: Giao diện chat, gợi ý khoá học dựa trên từ khoá nhập.
+  - Gợi ý sản phẩm dựa trên lịch sử xem và yêu thích (modal Suggestion).
+- **Lịch sử xem sản phẩm**: Xem lại các khoá học đã từng truy cập, nhóm theo ngày.
+- **Sản phẩm yêu thích**: Lưu và quản lý danh sách khoá học yêu thích.
+- **Đánh giá học viên**: Carousel review từ học viên thật.
+- **Skeleton loading**: Hiệu ứng loading đẹp mắt khi chờ dữ liệu.
+- **Mock API & dữ liệu mẫu**: Không cần backend thật, dễ dàng demo và phát triển.
 
-### `npm start`
+## 🖼️ Demo giao diện
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Trang chủ: Hero, tính năng, carousel khoá học, review học viên, footer.
+- Trang sản phẩm: Tìm kiếm, lọc, gợi ý AI, danh sách sản phẩm.
+- Trang lịch sử: Nhóm sản phẩm đã xem theo ngày.
+- Trang yêu thích: Danh sách sản phẩm đã lưu.
+- Chatbot AI: Nổi bật ở góc phải, tư vấn khoá học theo từ khoá.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🏗️ Cấu trúc thư mục
 
-### `npm test`
+```
+src/
+  components/      // Các component UI: ChatBot, ProductCard, Header, Carousel, Review, ...
+  pages/           // Các trang chính: HomePage, ProductPage, HistoryPage, FavoritesPage, NotFoundPage
+  data/            // Dữ liệu mock, API giả lập (axios-mock-adapter)
+  utils/           // Hàm tiện ích: search, localStorage, ...
+  styles/          // CSS module cho từng component
+  App.tsx          // Định tuyến và layout tổng
+  index.tsx        // Entry point
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ⚙️ Cài đặt & chạy thử
 
-### `npm run build`
+1. **Clone project:**
+   ```bash
+   git clone <repo-url>
+   cd e-learning-platform
+   ```
+2. **Cài đặt dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Chạy ứng dụng:**
+   ```bash
+   npm start
+   ```
+   Truy cập [http://localhost:3000](http://localhost:3000)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Các lệnh npm khác
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `npm test`: Chạy unit test.
+- `npm run build`: Build production.
+- `npm run eject`: Eject cấu hình (không khuyến khích).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📦 Công nghệ sử dụng
 
-### `npm run eject`
+- React, TypeScript, React Router, React Bootstrap, Bootstrap 5
+- axios, axios-mock-adapter (mock API)
+- react-toastify (thông báo)
+- FontAwesome, React Icons
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📚 Ghi chú
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Dữ liệu sản phẩm, review, gợi ý đều là mock, không cần backend thật.
+- Có thể mở rộng tích hợp backend thật dễ dàng.
+- Giao diện responsive, tối ưu cho desktop và mobile.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Dự án mẫu cho các bài tập, demo, hoặc phát triển nền tảng học trực tuyến cá nhân.
