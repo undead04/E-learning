@@ -1,0 +1,115 @@
+/* Note: Class names here can be generic as they'll be hashed */
+.cardContainer {
+  margin-bottom: 1rem; /* Equivalent to mb-4 from Bootstrap, consider if you want to keep Bootstrap classes or move everything to CSS Modules */
+}
+
+.cardShadowHover {
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 60%, #e0c3fc 100%);
+  transition: transform 0.25s cubic-bezier(0.4, 2, 0.6, 1), box-shadow 0.25s;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 6px 32px 0 rgba(88, 74, 248, 0.1);
+}
+
+.cardShadowHover:hover {
+  transform: scale(1.035);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.cardImage {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(88, 74, 248, 0.1);
+  transition: filter 0.2s;
+}
+
+.cardImage:hover {
+  filter: brightness(0.92) saturate(1.18);
+}
+
+.hotBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 5px 16px;
+  border-radius: 1.25rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px 0 rgba(255, 126, 95, 0.1);
+  z-index: 2;
+}
+
+.favoriteIcon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.2s;
+  color: #d1d1d1; /* Default color */
+}
+
+.favoriteIcon.isFavorite {
+  color: #ff4d6d;
+}
+
+.cardTitle {
+  color: #584af8;
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 28px;
+}
+
+.badgeGroup {
+  gap: 8px; /* For the gap between badges */
+}
+
+.ratingBadge {
+  background: linear-gradient(90deg, #584af8 0%, #b983ff 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.priceBadge {
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6px 16px;
+  border-radius: 1rem;
+}
+
+.cardDescription {
+  min-height: 48px;
+  font-size: 15px;
+}
+
+.detailButton {
+  background: linear-gradient(90deg, #584af8 0%, #b983ff 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.6rem 1.7rem;
+  font-size: 16px;
+  box-shadow: 0 2px 12px 0 rgba(88, 74, 248, 0.1);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.detailButton:hover {
+  background: linear-gradient(90deg, #b983ff 0%, #584af8 100%);
+  color: #fff;
+  box-shadow: 0 4px 24px 0 rgba(88, 74, 248, 0.18);
+  transform: translateY(-2px) scale(1.03);
+}

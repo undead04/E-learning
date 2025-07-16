@@ -1,0 +1,48 @@
+/* Container for the entire placeholder card */
+.cardContainer {
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+/* Container for the image placeholder and badges */
+.imagePlaceholderWrapper {
+  position: relative;
+}
+
+/* Style for the main image placeholder div */
+.imagePlaceholder {
+  height: 200px;
+  width: 100%;
+  display: block;
+  background-color: #e0e0e0;
+}
+
+/* Style for the "Hot" badge placeholder */
+.badgePlaceholder {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  height: 28px;
+  width: 80px;
+  border-radius: 1rem;
+  background-color: #f0f0f0;
+}
+
+/* Style for the favorite icon placeholder */
+.iconPlaceholder {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+/* Style for the placeholder button */
+.buttonPlaceholder {
+  border-radius: 2rem;
+  height: 40px;
+  background-color: #d0d0d0;
+  border: none;
+}

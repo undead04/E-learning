@@ -1,0 +1,77 @@
+/* Image Styles */
+.productImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 24px 0 rgba(88, 74, 248, 0.1);
+  object-fit: cover;
+}
+
+/* Title Styles */
+.productTitle {
+  color: #584af8;
+}
+
+/* Rating Badge Styles */
+.ratingBadge {
+  background: linear-gradient(90deg, #584af8 0%, #b983ff 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 18px;
+  border-radius: 1rem;
+  letter-spacing: 0.5px;
+  margin-right: 8px;
+}
+
+/* Price Badge Styles */
+.priceBadge {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 6px 18px;
+  border-radius: 1rem;
+  margin-left: 4px;
+}
+
+/* Description Text Styles */
+.descriptionText {
+  min-height: 48px;
+}
+
+/* Long Description Container Styles */
+.longDescriptionContainer {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+/* Long Description Title Styles */
+.longDescriptionTitle {
+  color: #584af8;
+}
+
+/* Long Description Content Styles */
+.longDescriptionContent {
+  white-space: pre-line;
+  font-size: 15px;
+}
+
+/* Close Button Styles */
+.closeButton {
+  background: linear-gradient(90deg, #584af8 0%, #b983ff 100%);
+  border: none;
+  border-radius: 2rem;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 2px 12px 0 rgba(88, 74, 248, 0.10);
+  transition: 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  color: #fff;
+}
+
+/* Close Button Hover/Focus */
+.closeButton:hover,
+.closeButton:focus {
+  background: linear-gradient(90deg, #b983ff 0%, #584af8 100%);
+  box-shadow: 0 4px 20px 0 rgba(88,74,248,0.20);
+  transform: translateY(-1px);
+}
