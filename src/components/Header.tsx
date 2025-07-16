@@ -16,7 +16,7 @@ function Header() {
       <Navbar expand="lg" sticky='top'  variant="dark" className={`shadow-sm py-2 ${styles.headerBackground}`}>
         <Container>
           <Navbar.Brand href="/" className="d-flex align-items-center">
-            <img src="/../logo.png" alt="logo" className={styles.img_logo} />
+            <img src="../logo.png" alt="logo" className={styles.img_logo} />
             <span className={styles.text_logo}>E-Learning</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="main-navbar-nav" />
