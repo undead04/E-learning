@@ -23,8 +23,6 @@ function ModalProduct({
   rating,
   description,
 }: ModalProps) {
-  const formattedImageUrl = imageUrl.startsWith('http') ? imageUrl : `/${imageUrl}`;
-
   return (
     <Modal
       size='xl'
@@ -40,7 +38,7 @@ function ModalProduct({
         <div className="row align-items-center">
           <div className="col-lg-5 text-center mb-3 mb-lg-0">
             <img
-              src={formattedImageUrl}
+              src={imageUrl}
               alt={title}
               className={styles.productImage}
             />

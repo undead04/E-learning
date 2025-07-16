@@ -26,7 +26,7 @@ function HeroSection() {
           </div>
           <div className="col-md-6 text-center position-relative">
             <img
-              src="/banner.png"
+              src="/../banner.png"
               alt="E-learning"
               className={`img-fluid ${styles.img_banner}`}
             />

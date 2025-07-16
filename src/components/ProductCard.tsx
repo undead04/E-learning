@@ -46,7 +46,6 @@ const ProductCard: React.FC<ProductCardProps> = ({
     <>
       <ModalComponent
         show={show}
-        
         onHide={() => setShow(false)}
         title={title}
         price={price}
